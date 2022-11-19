@@ -1,6 +1,6 @@
 import Stories from './Stories';
 import Posts from './Posts';
-// import Sidebar from './Sidebar';
+import SideBar from './SideBar';
 
 export default function Corpo () {
     return(
@@ -9,7 +9,7 @@ export default function Corpo () {
                 <Stories/>
                 <Posts/>
             </div>
-            {/* <SideBar/> */}
+            <SideBar/>
         </div>
     )
 }
