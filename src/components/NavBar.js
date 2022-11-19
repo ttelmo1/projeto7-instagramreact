@@ -8,13 +8,13 @@ export default function NavBar(){
           <img src="/assets/img/logo.png" />
         </div>
 
-        {/* <div class="logo-mobile">
+        <div class="logo-mobile">
           <ion-icon name="logo-instagram"></ion-icon>
-        </div> */}
+        </div>
 
-        {/* <div class="instagram-mobile">
+        <div class="instagram-mobile">
           <img src="/assets/img/logo.png" />
-        </div> */}
+        </div>
 
         <div class="pesquisa">
           <input type="text" placeholder="Pesquisar" />
@@ -27,9 +27,9 @@ export default function NavBar(){
           <ion-icon name="person-outline"></ion-icon>
         </div>
 
-        {/* <div class="icones-mobile">
+        <div class="icones-mobile">
           <ion-icon name="paper-plane-outline"></ion-icon>
-        </div> */}
+        </div>
       </div>
       </div>
     )
