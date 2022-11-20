@@ -184,6 +184,38 @@ body {
   width: 100%;
 }
 
+.conteudo{
+  position: relative;
+}
+
+.likeIcon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 0.2;
+  opacity: 0;
+}
+
+.likeIcon.curtiu{
+  animation: like 2000ms;
+}
+
+@keyframes like {
+  0%{opacity: 1;}
+  40%{scale: 1;}
+  100%{opacity: 0;}
+}
+
+.likeIcon ion-icon{
+  font-size: 200px;
+  color: #fff;
+}
+
 .acoes ion-icon[name = "heart"]{
   color: red
 }
@@ -403,4 +435,6 @@ ion-icon {
 .usuario ion-icon {
   margin-left: 5px;
 }
+
+
 

@@ -11,28 +11,22 @@ export default function Post(props) {
     !(bookMark === "bookmark") ? setBookMark("bookmark") : setBookMark("bookmark-outline")
   }
 
-  function clickLike(){
-    
-    if(like)setLikesValue(likesValue - 1)
+  function clickLike() {
+
+    if (like) setLikesValue(likesValue - 1)
     else setLikesValue(likesValue + 1)
 
     setLike(!like)
 
   }
 
-  function dbClick(){
-    countClick++
-    setTimeout(function(){
-      countClick = 0;
-    },600)
-    if(countClick == 2 && like == false){
-
+  function dbClick (){
+    if(!like){
       setLikesValue(likesValue + 1)
       setLike(true)
 
     }
   }
-
 
   return (
 
@@ -47,8 +41,11 @@ export default function Post(props) {
         </div>
       </div>
 
-      <div class="conteudo">
-        <img data-test="post-image" onClick={dbClick} src={props.userPost} />
+      <div class="conteudo" onDoubleClick={dbClick}>
+        <img data-test="post-image"  src={props.userPost} />
+        <div className={`likeIcon ${like ? "curtiu" : ""}`}>
+          <ion-icon name="heart"></ion-icon>
+        </div>
       </div>
 
       <div class="fundo">
