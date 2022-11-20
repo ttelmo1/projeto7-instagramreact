@@ -208,7 +208,7 @@ body {
 @keyframes like {
   0%{opacity: 1;}
   40%{scale: 1;}
-  100%{opacity: 0;}
+  100%{opacity: 0; scale: 1;}
 }
 
 .likeIcon ion-icon{

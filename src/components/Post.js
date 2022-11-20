@@ -5,7 +5,7 @@ export default function Post(props) {
   const [bookMark, setBookMark] = React.useState("bookmark-outline");
   const [like, setLike] = React.useState(false);
   const [likesValue, setLikesValue] = React.useState(props.likes);
-  let countClick = 0;
+  
 
   function changeBookMark(bookMark) {
     !(bookMark === "bookmark") ? setBookMark("bookmark") : setBookMark("bookmark-outline")
