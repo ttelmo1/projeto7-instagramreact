@@ -10,7 +10,7 @@ export default function Posts() {
             userPost: '/assets/img/dog.svg',
             userLiked: '/assets/img/respondeai.svg',
             likedBy: 'respondeai',
-            likes:'101.523'
+            likes:599
         },
         {
             userImage: '/assets/img/meowed.svg',
@@ -18,7 +18,7 @@ export default function Posts() {
             userPost: '/assets/img/gato-telefone.svg',
             userLiked: '/assets/img/barked.svg',
             likedBy: 'barked',
-            likes:'99.159'
+            likes:991
         }
     ]
 

@@ -184,6 +184,10 @@ body {
   width: 100%;
 }
 
+.acoes ion-icon[name = "heart"]{
+  color: red
+}
+
 .post .fundo .acoes {
   display: flex;
   justify-content: space-between;
