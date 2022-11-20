@@ -23,13 +23,13 @@ export default function Usuario(){
 
     function Usuario(props){
         return(
-            <div className="usuario">
-              <img src={userImage} onClick={insertImage} />
+            <div data-test="user" className="usuario">
+              <img src={userImage} data-test="profile-image" onClick={insertImage} />
               <div className="texto">
                 <strong>{props.userTag}</strong>
-                <span>
+                <span data-test="name">
                   {props.userName}
-                  <ion-icon onClick={insertName} name="pencil"></ion-icon>
+                  <ion-icon data-test="edit-name" onClick={insertName} name="pencil"></ion-icon>
                 </span>
               </div>
             </div>
